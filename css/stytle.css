@@ -1,0 +1,259 @@
+:root {
+    --primary: #873e23;
+    --bg: #fff;
+
+}
+
+* {
+    font-family:"Poppins",sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--bg);
+    color: var(--primary);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color:rgba(1, 1, 1, 0.8) ;
+    border-bottom: 1px solid #642e1b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo{
+    font-size: 2rem;
+    font-weight: 500;
+    color:  #873e23;
+    font-style: italic;
+}
+
+.navbar .navbar-logo span{
+    color: #fff;
+}
+
+.navbar .navbar-nav a{
+    color: #fff;
+    display: inline-block;
+    font-size: 1.4rem;
+    margin:  0 1rem;    
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--primary);
+}
+
+.navbar .navbar-extra a{
+    color: #fff;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: var(--primary);
+}
+
+#martabak-menu {
+    display: none;
+}
+
+@media (max-width: 1366px){
+    html {
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 758px){
+    html {
+        font-size: 62.5%;
+    }
+
+    #martabak-menu {
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #000;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a{
+        color: var(--bg);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .about .row{
+        flex-wrap: wrap;
+    }
+
+    .about .row .about-img img{
+        height: 20rem;
+        object-fit: cover;
+    }
+
+    footer {
+        display: block;
+        margin: 1rem;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 450px){
+    html {
+        font-size: 55%;
+    }
+}
+
+.hero {
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    background-image: url(../img/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero .content{
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+
+.hero .content h1{
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+}
+
+.hero .content p {
+    color: #fff;
+}
+
+.hero .content .cta {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    color: #000;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+.hero .content .cta :hover{
+    color: var(--primary);
+}
+
+.about {
+    padding: 10rem 7% 1.5rem;
+}
+
+.about .content h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.about .row {
+    display: flex;
+}
+
+.about .row .about-img{
+    flex: 1 1 45rem;
+}
+
+.about .row .about-img img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.about .row .content{
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.about .row .content h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.about .row .content p{
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+.menu{
+    padding: 10rem 7% 1.5rem;
+    min-height: 100vh;
+    background-color:  #ae6435;
+    color: #fff;
+}
+
+.menu h2{
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.menu p{
+    text-align: center;
+}
+
+.menu .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    justify-content: center;
+}
+
+.menu .row .menu-card {
+    text-align: center;
+}
+
+.menu .row .menu-card img{
+    width: 20rem;
+    height: 20rem;
+    object-fit: contain;
+    margin-right: 1.5rem;
+}
+
+.menu .row .menu-card .menu-price{
+    margin: 1rem auto 0.5rem;
+}
+
+footer {
+    background-color:white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer .socials {
+    padding: 1rem 0;
+}
+
+footer .socials a{
+    color: #000;
+    margin: 1rem;
+    font-size: 1rem;
+}
